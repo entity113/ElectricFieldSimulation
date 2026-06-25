@@ -17,7 +17,7 @@ Window::Window(QWidget *parent)
     header->setSectionResizeMode(1, QHeaderView::Fixed);
     header->setStretchLastSection(false);
     header->setStyleSheet("QHeaderView { font-weight: normal; }");
-    ui->chargeTableWidget->setColumnWidth(1, 65);
+    ui->chargeTableWidget->setColumnWidth(1, 90);
     
     connect(ui->chargeTableWidget, &QTableWidget::cellClicked, [this](int row, int col){
         if (ui->removeButton->text() == ACCEPT)
